@@ -41,6 +41,7 @@ export default function CheckoutForm({ onConfirm }) {
       <div style={styleInput}>
         <label style={label}>Nombre</label>
         <input
+        className="input"
           value={userData.nombre}
           name="nombre"
           type="text"
@@ -50,6 +51,7 @@ export default function CheckoutForm({ onConfirm }) {
       <div style={styleInput}>
         <label style={label}>Teléfono</label>
         <input
+        className="input"
           value={userData.phone}
           name="phone"
           type="text"
@@ -59,6 +61,7 @@ export default function CheckoutForm({ onConfirm }) {
       <div style={styleInput}>
         <label style={label}>Email</label>
         <input
+        className="input"
           value={userData.email}
           name="email"
           type="text"
@@ -72,3 +75,5 @@ export default function CheckoutForm({ onConfirm }) {
     </form>
   );
 }
+
+

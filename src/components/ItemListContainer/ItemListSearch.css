@@ -9,12 +9,16 @@
     border: none;
     color: #646464;
     padding: 0.7rem 1rem;
-    border-radius: 30px;
     width: 12em;
     transition: all ease-in-out .5s;
-    margin-right: -2rem;
-    margin-left: 20px;
+    margin-top: 40px;
+    margin-right: 60px; 
     margin-bottom: 40px;
+    border: none;
+    border-bottom: 1px solid rgb(71, 47, 47);
+    border-width: 5px;
+    outline: none; /* Esto elimina el contorno cuando el input está enfocado */
+    background-color:rgb(241, 241, 239);
   }
   
   .search__input {
@@ -67,6 +71,7 @@
 .searcher{
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: center;
   margin: 0px 80px;
 }
+

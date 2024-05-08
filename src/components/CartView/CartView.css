@@ -9,8 +9,9 @@
   }
   
   .cartList_head{
-    background-color: rgb(161, 176, 167);;
+    background-color: rgba(71, 47, 47, 0.2);
     margin: 8px auto;
+    font-family: 'Aboreto';
   }
   
   .cartList_row{
@@ -35,6 +36,7 @@
     flex-direction: column;
     align-items: center;
     font-size: large;
+    font-family: 'Aboreto';
   }
 
   .botones{
@@ -42,7 +44,14 @@
     direction: row;
   }
 
-  .products_row{
-    line-height: 100px;
-  }
 
+
+
+.remove_button{
+  cursor: pointer;
+  border: none;
+  background-color: #a1a1a1;
+  border-radius: 50px;
+  height: 30px;
+  width: 30px;
+}

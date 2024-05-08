@@ -1,15 +1,57 @@
-.card2 {
-    display: flex;
-    flex-wrap: wrap;
-  }
+
+.titleoc {
+  margin: 30px;
+  font-size: 15px;
   
-  .car {
-    margin: 10px;
-    text-align: center;
-  }
-  
-  .car img {
-    width: 70px;
-    height: 70px;
-  }
-  
+}
+
+.imgoc {
+  width: 100px;
+  height: auto;
+}
+
+.smalloc{
+  color: black;
+}
+
+.order{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 450px;
+  padding: 50px;
+  background-color:rgba(71, 47, 47, 0.2) ;
+  border-radius: 30px;
+}
+
+
+.orderResume{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: 'Aboreto';
+  font-weight: bolder;
+}
+
+.cardoc{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px 20px;
+}
+
+
+.entrega{
+  margin: 50px 600px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.entrega2{
+  font-family: 'Aboreto';
+  font-weight: bolder;
+  font-size: 20px;
+}

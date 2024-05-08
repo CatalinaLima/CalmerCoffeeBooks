@@ -1,0 +1,35 @@
+.books-categories{
+    text-decoration: none;
+    display: flex;
+    background-color: blueviolet;
+    height: 50px;
+  }
+  
+  .nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px; /* Add padding for spacing around the logo and links */
+    background-color: rgba(86, 92, 62, 0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    height: 140px;
+    margin: 0;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.15em;
+    color: rgb(222, 207, 133);
+    margin-right: 100px; /* Add spacing between nav links */
+    transition: color 0.3s ease;
+    display: flex;
+    font-weight: bolder;
+  }
+  
+  
+  

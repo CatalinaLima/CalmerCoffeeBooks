@@ -1,22 +1,13 @@
 import { useEffect, useState } from "react"
-import { useParams } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 import {getCategoryData, getData} from '../../services/firebase'
-
-
 import ItemListSearch from "./ItemListSearch"
-//import productsStore from "../data/productsStore"
+import './ItemListContainer.css'
+import Categories from "./Categories"
 
 
-/* -------------- SERVICIO REMOTO BE ☁️-------------- */
-
-// function getData() {
-//     return new Promise ((resolve) => {
-//         setTimeout ( () => {resolve (productsStore) }, 2000 )
-//     } )
-// }
 
 
-//------------------------------------------------------//
 function ItemListContainer () {
     let [isLoading, setIsLoading] = useState (true)
     let [products, setProducts] = useState ([]);
@@ -36,7 +27,8 @@ function ItemListContainer () {
 
     return (
         <div>
-                <ItemListSearch isLoading={isLoading} products={products} />
+            <Categories/>
+            <ItemListSearch isLoading={isLoading} products={products} />
         </div>
     )
 }

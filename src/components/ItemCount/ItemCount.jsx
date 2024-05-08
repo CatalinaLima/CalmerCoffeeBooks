@@ -20,7 +20,6 @@ function ItemCount ({stock, onAddToCart}) {
 
         return (
             <div className="itemcount_container">
-                <small>Agrega la cantidad deseada al carrito</small>
                 <div className="itemcount_control">
                     <Flex>
                         <button className='btn' disabled = {isDisabledSubstract} onClick={handleSubstract}> - </button>
@@ -30,7 +29,7 @@ function ItemCount ({stock, onAddToCart}) {
                 </div>
 
                 <div className='itemcount_btns'>
-                    <button onClick={ () => {onAddToCart(count)} } className='btn'>Agregar a mi carrito</button>
+                    <button onClick={ () => {onAddToCart(count)} } className='btn'>ADD TO CART</button>
                 </div>
             </div>
         )

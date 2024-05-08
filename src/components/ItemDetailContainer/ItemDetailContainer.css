@@ -4,7 +4,7 @@
   }
   
   .card-detail_img img{
-    max-width: 90%;
+    max-width: 500px;
   }
   
   .card-detail_main{
@@ -14,14 +14,11 @@
     text-align: center;
     margin: 40px auto;  
     min-height: 600px;
-    width: 60%;
-    min-width: 580px;
-    height: 100%;
-    border-radius: 4px;
-    box-shadow: 0px 0px 4px rgba(0,0,0,0.50);
-    background-color: #fff;
+    width: 980px;
+    background-color: none;
     overflow: hidden;  
     transition: all 0.20s ease-in;
+    font-family: 'Aboreto';
   }
   
   
@@ -31,12 +28,46 @@
     flex-direction: column;
     justify-content: space-around;
     padding: 12px 8px;
+    width: 400px;
+    font-size: 1.2em;
   }
   
-  small{
-    color: #8c8c8e;
+
+
+  .idctitle{
+    font-family: 'Aboreto';
+    font-size:20px;
   }
+
+  .priceTag{
+    color:rgb(145, 102, 10);
+  }
+
+  .btnbtn{
+    padding: 8px;
+    color: white;
+    font-size: 10px;
+    max-width: 100px;
+    max-height: 50px;
+    background-color: rgb(49, 50, 49);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    margin-top: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+
   
-  .card-detail_muted{
-    color: #8c8c8e
+    &:hover{
+      box-shadow: 0px 4px 5px #d7d7db;
+    }
+  }
+
+  .botoness{
+    display: flex;
+    flex-direction: row ;
+
+
+
   }

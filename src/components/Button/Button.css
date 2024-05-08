@@ -1,22 +1,16 @@
 .btn {
     padding: 5px 15px;
-    color: white;
+    color: rgb(29, 29, 29);
+    background-color: none;
     max-width: 150px;
-    background-color: rgb(188, 191, 196);
-    border-radius:  20px; 
-    border: none;
+    border: 1px;
+    border-color: rgb(255, 47, 130);
     margin: 5px 15px;
     cursor: pointer;  
+    
   
     &:hover{
       box-shadow: 0px 4px 5px #d7d7db;
     }
   }
   
-  
-  .btn.danger{
-    background-color: rgb(200, 50, 50);
-  }
-  .btn.warning{
-    background-color: rgb(200, 167, 50);
-  }

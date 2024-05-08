@@ -89,11 +89,16 @@ function ItemDetailContainer (stock) {
                 <img src={product.image} alt={product.title} />
             </div>
             <div className="card-detail_detail">
-                <h1>{product.title}</h1> 
+                <h1 className='idctitle'>{product.title}</h1> 
                 <h2 className="priceTag"> $ {product.price} </h2>
-                <small>{product.detail}</small>
+                <small>{product.description}</small>
 
-                {countInCart===0 ? ( <ItemCount onAddToCart={onAddToCart} stock = {product.stock} />):( <Link to='/cart'> Ir al carrito </Link>)}
+                {countInCart===0 ? ( <ItemCount onAddToCart={onAddToCart} stock = {product.stock} />):(
+                    <div className='botoness'>
+                        <Link to='/cart' className='btnbtn'> GO TO CART </Link>
+                        <Link to='/books' className='btnbtn' > KEEP SHOPPING </Link>
+                    </div>
+                )}
                 
                 {/* <Button onClick={ () => removeItem (product.id) }>Eliminar</Button>  */}
             </div>

@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { cartContext } from "../../context/cartContext";
-import Button from "../Button/Button";
+//import Button from "../Button/Button";
 import "./CartView.css";
 import CheckoutForm from "../CheckoutForm/CheckoutForm";
 import { createOrderWithStockUpdate } from "../../services/firebase";
@@ -23,7 +23,8 @@ function CartContainer() {
       console.log("respuesta", id);
       clear();
 
-      navigateTo(`/order-confirmation/${id}`);
+      // navigateTo(`/order-confirmation/${id}`);
+      navigateTo(`/order-confirmation/${id}`, { state: { order } });
 
     } catch (error) {
       alert(error);
@@ -57,10 +58,10 @@ function CartContainer() {
               <td>{item.title}</td>
               <td>$ {item.price}</td>
               <td>{item.count}</td>
-              <td>
-                <Button color="#d95555" onClick={() => handleCancel(item.id)}>
+              <td className="cartList_row_button" >
+                <button className="remove_button" onClick={() => handleCancel(item.id)}>
                   X
-                </Button>
+                </button>
               </td>
               <th>$ {(item.price * item.count).toFixed(2)}</th>
             </tr>

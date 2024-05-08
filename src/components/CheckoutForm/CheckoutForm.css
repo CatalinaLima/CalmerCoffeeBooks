@@ -8,35 +8,33 @@
     flex-direction: column;
     align-items: center;
     margin-top: 100px;
+    margin-bottom: 50px;
   }
   
-  .checkoutform-container input{
-    background-color: white;
-    border-radius: 1rem;
+  .input{
     width: 85%;
     outline: none;
     border: none;
     box-shadow: none;
     display: block;
-    padding : 8px 14px;
-    margin: 15px auto 20px; 
+    padding : 5px;
+    border-bottom: 1px solid rgb(71, 47, 47);
+    border-width: 5px;
+    background-color: #e6e6e6;
   }
 
+
   .buttonC{
-    background-color: #c6c6c6;
-    border: 1px solid rgba(54, 54, 54, 0.6);
-    font-weight: 600;
-    position: relative;
-    outline: none;
-    border-radius: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    height: 45px;
-    width: 130px;
-    opacity: 1;
-    margin: 20px;
+  background-color: rgb(71, 47, 47);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  min-width: 100px;
+  margin-left: 20px;
+  margin-right: 20px;
   }
 
   .titleC{
@@ -44,8 +42,10 @@
     margin-top: 20px;
     margin-bottom: 40px;
     color: rgb(34, 35, 34);
+    font-weight: bolder;
   }
 
   .Botones{
-    margin: 0px;
+    margin: 20px;
+    display: flex;
   }
