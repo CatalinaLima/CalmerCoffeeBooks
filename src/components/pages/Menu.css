@@ -1,0 +1,25 @@
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    background-color: rgba(71, 47, 47, 0.4);
+}
+
+.menuimg,
+.menuimg2{
+    margin-top: 100px;
+    height: 1000px;
+    margin-bottom: 100px;
+}
+
+.menuimg2{
+    margin-right: 50px;
+}
+
+.menuimg{
+    margin-left: 50px;
+}

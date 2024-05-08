@@ -1,0 +1,75 @@
+.contact-section {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin-top: 50px;
+  align-items: center;
+}
+
+.contact-map {
+  height: 500px; /* Ajusta la altura según tus necesidades */
+  width: 100%; /* O ajusta el ancho según tus necesidades */
+  margin-top: 150px;
+}
+
+
+.contact-content{
+  font-size: 20px;
+  margin: 50px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+
+.title{
+  font-family: 'Aboreto';
+  color: rgb(71, 47, 47);
+  font-weight: bolder;
+  font-size: 4em;
+
+}
+
+.formulario{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Aboreto';
+  color: rgb(71, 47, 47);
+  font-weight: bolder;
+  font-size: 1.2em;
+
+}
+
+.form2 {
+  margin-top: 90px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.form2 label {
+  margin-bottom: 8px;
+}
+
+.form2 input,
+.form2 textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: none;
+  border-bottom: 1px solid rgb(71, 47, 47);
+  outline: none; /* Esto elimina el contorno cuando el input está enfocado */
+  background-color:rgb(241, 241, 239);
+  border-width: 5px;
+}
+
+
+.form2 button {
+  background-color: rgb(71, 47, 47);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+}

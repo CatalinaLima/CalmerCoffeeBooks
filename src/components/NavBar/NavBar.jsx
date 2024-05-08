@@ -20,25 +20,25 @@ export default function NavBar() {
                 <h2 className="logo">
                     <li>
                         <Link to="/">
-                            <img src={'public/assets/cozyhomestore1.png'} alt="Logo" />
+                            <img src='/assets/calmer.png' alt="Logo" />
                         </Link>
                     </li>
                 </h2>
 
                 <li className="nav-item">
-                    <Link className="nav-link" to="/category/PlantAccessories">Plant Accesories</Link>
+                    <Link className="nav-link" to="/books">BOOKS</Link>
                 </li>
 
                 <li className="nav-item">
-                    <Link className="nav-link" to="/category/HomeDecor">Home Decor</Link>
+                    <Link className="nav-link" to="/menu">MENU</Link>
                 </li>
 
                 <li className="nav-item">
-                    <Link className="nav-link" to="/category/Furniture">Furniture</Link>
+                    <Link className="nav-link" to="/about">ABOUT US</Link>
                 </li>
 
                 <li className="nav-item">
-                    <Link className="nav-link" to="/category/Lighting">Lightning</Link>
+                    <Link className="nav-link" to="/contact">CONTACT</Link>
                 </li>
 
                 <li className="cart-widget">

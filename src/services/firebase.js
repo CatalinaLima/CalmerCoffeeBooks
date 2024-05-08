@@ -1,35 +1,42 @@
 // Import the functions you need from the SDKs you need
 import productsStore from '../data/productsStore'
 import { initializeApp } from "firebase/app";
-import {getFirestore, collection, getDocs, doc, getDoc, query, where, addDoc, orderBy, writeBatch} from 'firebase/firestore'
+import {getFirestore, collection, getDocs, doc, getDoc, query, where, addDoc, orderBy, writeBatch, limit} from 'firebase/firestore'
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
+
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAhr8GynbRLHefG6sfkdgiiCkVmwJ4_D7c",
-  authDomain: "catastore-60628.firebaseapp.com",
-  projectId: "catastore-60628",
-  storageBucket: "catastore-60628.appspot.com",
-  messagingSenderId: "1024998918992",
-  appId: "1:1024998918992:web:056169899cd5a8aad27a55"
+  apiKey: "AIzaSyCwj9iLXERkkNtMKNNSeUYRiIrvta6O1A0",
+  authDomain: "calmer-5e187.firebaseapp.com",
+  projectId: "calmer-5e187",
+  storageBucket: "calmer-5e187.appspot.com",
+  messagingSenderId: "12103196429",
+  appId: "1:12103196429:web:074b2973745007c58c1a44"
 };
 
 // Initialize Firebase
 const firebaseApp = initializeApp(firebaseConfig);
 const db = getFirestore(firebaseApp)
 
-export async function getData() {
+export async function getData(limitCount) {
     const productsCollectionRef = collection(db, 'products')
 
-    const q = query (productsCollectionRef, orderBy('index'))
-    const productsSnapshot = await getDocs (q)
-    const arrayDocs = productsSnapshot.docs
-    const dataDocs = arrayDocs.map ((doc) => {
-        return {...doc.data(), id: doc.id}
-    })
-    return dataDocs
+    let q = query (productsCollectionRef, orderBy('index'))
+
+    if (limitCount) {
+      q = query(q, limit(limitCount));
+    }
+
+    const productsSnapshot = await getDocs(q);
+    const arrayDocs = productsSnapshot.docs;
+    const dataDocs = arrayDocs.map((doc) => {
+      return { ...doc.data(), id: doc.id };
+    });
+  
+    return dataDocs;
 }
 
 export async function getItemData(idURL) {

@@ -1,0 +1,364 @@
+.encabezado {
+    width: 100%;
+}
+
+
+.category-item {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hpimg {
+    height: 300px;
+}
+
+.titleh1 {
+    font-family: 'Quicksand';
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: rgb(49, 49, 49);
+}
+
+.titleh2 {
+    font-family: 'Quicksand';
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: rgb(49, 49, 49);
+    font-weight: 900;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.section1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    justify-content: space-around;
+    margin-right: 450px;
+    margin-left: 100px;
+    margin-bottom: 100px;
+}
+
+.section2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: 70px;
+    background-color: rgb(199, 194, 196);
+    height: 700px; /* Cambié 100vh a auto para que se ajuste al contenido */
+    justify-content: center; /* Cambié flex-start a center para centrar los elementos */
+}
+
+/* Ajustes para el slider de react-slick */
+.slick-slider {
+    width: 60%; /* Puedes ajustar el ancho del slider según tus necesidades */
+    margin: 90px; /* Centra el slider horizontalmente */
+}
+
+.carousel-item-product {
+    display: flex;
+    flex-direction: column; /* Ajustado para centrar el contenido verticalmente */
+    align-items: center; /* Ajustado para centrar el contenido horizontalmente */
+    margin: 50px 50px; /* Espaciado entre cada producto en el slider */
+}
+
+
+.boton {
+    padding: 12px;
+    color: white;
+    font-size: 15px;
+    max-width: 500px;
+    background-color: rgb(49, 50, 49);
+    border-radius: 4px;
+    border: none;
+    margin: 5px 15px;
+    cursor: pointer;
+}
+
+.featured-item {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    height: 500px;
+    width: 500px;
+}
+
+.hpimg2 {
+    height: 550px;
+    transition: 1.5s;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.hpimg2:hover {
+    transform: scale(1.2);
+}
+
+.infohp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hpimg3 {
+    height: 800px;
+}
+
+.titlehpgrid {
+    font-family: 'Quicksand';
+    font-weight: 500;
+    color: rgb(49, 49, 49);
+    text-align: center; /* Agregado para centrar el texto horizontalmente */
+    margin-top: 10px; /* Puedes ajustar el margen superior según tus necesidades */
+}
+
+
+.foto1,
+.foto2 {
+    height: 600px;
+    margin: 0px 5px;
+}
+
+.images1 {
+    position: relative;
+}
+
+.foto2 {
+    position: absolute;
+    top: 200px;
+    /* Puedes ajustar la posición vertical según tus necesidades */
+    left: 400px;
+    /* Puedes ajustar la posición horizontal según tus necesidades */
+}
+
+.foto1 {
+    top: -50px;
+    /* Puedes ajustar la posición vertical según tus necesidades */
+    left: 100px;
+    /* Puedes ajustar la posición horizontal según tus necesidades */
+}
+
+.ts1 {
+    font-size: 40px;
+    margin-right: 270px;
+    font-family: 'Aboreto';
+    margin-left: 100px;
+    background-color: rgba(71, 47, 47, 0.6);
+    color: rgb(218, 221, 224);
+}
+
+.ts11 {
+    font-size: 40px;
+    margin-right: 50px;
+    font-family: 'Aboreto';
+    margin-left: 100px;
+}
+
+.section3 {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 200px;
+    margin-left: 50px;
+}
+
+.fotoprueba1 {
+    height: 700px;
+}
+
+.ts2 {
+    font-size: 30px;
+    font-family: 'Aboreto';
+}
+
+
+
+.s3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 50px;
+    margin-right: 300px;
+    background-color:  rgba(71, 47, 47, 0.1);
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.s2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: 150px;
+    margin-right: 50px;
+}
+
+.button {
+    padding: 12px;
+    color: white;
+    font-size: 15px;
+    max-width: 500px;
+    background-color: rgb(49, 50, 49);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+
+
+.d-blockw-100{
+    height: 350px;
+}
+
+
+.libros {
+    text-align:right; /* Agregado para alinear el texto a la izquierda */
+}
+
+.s4{
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    color: rgb(71, 47, 47);
+    justify-content: center;
+    align-items: center;
+    margin: 0px 300px;
+    text-align: center;
+
+
+}
+
+.s4title{
+    font-size: 30px;
+    font-family: 'Aboreto';
+    font-size: 80px;
+
+}
+
+.p4{
+    font-size: 30px;
+    font-family: 'Aboreto';
+    font-size: 25px;
+}
+
+.section5{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    max-width: 100vh ;
+
+
+}
+
+.ts5 {
+    font-size: 30px;
+    font-family: 'Aboreto';
+    color: rgb(224, 224, 224);
+}
+
+.foto3,
+.foto4{
+    height: 400px;
+}
+
+.foto7{
+    height: 600px;
+}
+
+.images2 {
+    position: relative;
+}
+
+.foto3 {
+    position: absolute;
+    top: -150px;
+    /* Puedes ajustar la posición vertical según tus necesidades */
+    left: 250px;
+    /* Puedes ajustar la posición horizontal según tus necesidades */
+}
+
+.foto4 {
+    position: relative;
+    top: -400px;
+    /* Puedes ajustar la posición vertical según tus necesidades */
+    left: 150px;
+    /* Puedes ajustar la posición horizontal según tus necesidades */
+}
+
+
+.foto7 {
+    position: relative;
+    top: 100px;
+    /* Puedes ajustar la posición vertical según tus necesidades */
+    left: 400px;
+    /* Puedes ajustar la posición horizontal según tus necesidades */
+}
+
+.foto5,
+.foto6{
+    height: 500px;
+}
+
+
+.images3 {
+    position: relative;
+}
+
+.foto5 {
+    position: absolute;
+    top: -400px;
+    /* Puedes ajustar la posición vertical según tus necesidades */
+    right: -500px;
+    /* Puedes ajustar la posición horizontal según tus necesidades */
+}
+
+.foto6 {
+    position: relative;
+    top: -150px;
+    /* Puedes ajustar la posición vertical según tus necesidades */
+    right: -750px;
+    /* Puedes ajustar la posición horizontal según tus necesidades */
+}
+
+
+.conocernos {
+  position: relative; /* Añadido para que los elementos absolutos se posicionen con respecto a este contenedor */
+}
+
+.texto-conocernos {
+    position: absolute;
+    top: 30%; /* Coloca el bloque de texto en el centro vertical */
+    left: 50%; /* Coloca el bloque de texto en el centro horizontal */
+    transform: translate(-50%, -50%); /* Centra el bloque de texto */
+    text-align: center;
+    z-index: 2; /* Asegura que el bloque de texto esté por encima de las imágenes */
+    background-color: rgba(71, 47, 47, 0.6); /* Ajusta el último valor para la opacidad (0.8 es 80% opaco) */
+    padding: 20px; /* Añadido para dar un poco de espacio alrededor del texto */
+    border-radius: 20px;
+}
