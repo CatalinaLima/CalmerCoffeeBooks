@@ -15,9 +15,9 @@ export default function NavBar() {
     }, [location])
 
     return (
-        <nav className='NavBar'>
-            <ul className="nav-menu">
-                <h2 className="logo">
+        <nav className='NavBar1'>
+            <ul className="nav-menu1">
+                <h2 className="logo1">
                     <li>
                         <Link to="/">
                             <img src='/assets/calmer.png' alt="Logo" />
@@ -25,23 +25,23 @@ export default function NavBar() {
                     </li>
                 </h2>
 
-                <li className="nav-item">
-                    <Link className="nav-link" to="/books">BOOKS</Link>
+                <li className="nav-item1">
+                    <Link className="nav-link1" to="/books">BOOKS</Link>
                 </li>
 
-                <li className="nav-item">
-                    <Link className="nav-link" to="/menu">MENU</Link>
+                <li className="nav-item1">
+                    <Link className="nav-link1" to="/menu">MENU</Link>
                 </li>
 
-                <li className="nav-item">
-                    <Link className="nav-link" to="/about">ABOUT US</Link>
+                <li className="nav-item1">
+                    <Link className="nav-link1" to="/about">ABOUT US</Link>
                 </li>
 
-                <li className="nav-item">
-                    <Link className="nav-link" to="/contact">CONTACT</Link>
+                <li className="nav-item1">
+                    <Link className="nav-link1" to="/contact">CONTACT</Link>
                 </li>
 
-                <li className="cart-widget">
+                <li className="cart-widget1">
                     <CartWidget/>
                 </li>
 
@@ -54,7 +54,7 @@ function CartWidget () {
     const {countItems} = useContext (cartContext)
     return (
     <Link to='/cart'>
-        <img className='CartImg' src={cart} alt="carrito de compras" />
+        <img className='CartImg1' src={cart} alt="carrito de compras" />
         <span>{countItems()}</span>
     </Link>
     )

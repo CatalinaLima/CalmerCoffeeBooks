@@ -52,7 +52,7 @@
     margin-bottom: 100px;
     justify-content: space-around;
     margin-right: 450px;
-    margin-left: 100px;
+    margin-left: 50px;
     margin-bottom: 100px;
 }
 
@@ -77,7 +77,7 @@
     display: flex;
     flex-direction: column; /* Ajustado para centrar el contenido verticalmente */
     align-items: center; /* Ajustado para centrar el contenido horizontalmente */
-    margin: 50px 50px; /* Espaciado entre cada producto en el slider */
+    margin: 10px 10px; /* Espaciado entre cada producto en el slider */
 }
 
 
@@ -137,8 +137,9 @@
 
 .foto1,
 .foto2 {
-    height: 600px;
+    height: 500px;
     margin: 0px 5px;
+    border-radius: 15px;
 }
 
 .images1 {
@@ -147,9 +148,9 @@
 
 .foto2 {
     position: absolute;
-    top: 200px;
+    top: 150px;
     /* Puedes ajustar la posición vertical según tus necesidades */
-    left: 400px;
+    left: 300px;
     /* Puedes ajustar la posición horizontal según tus necesidades */
 }
 
@@ -162,7 +163,7 @@
 
 .ts1 {
     font-size: 40px;
-    margin-right: 270px;
+    margin-right: 100px;
     font-family: 'Aboreto';
     margin-left: 100px;
     background-color: rgba(71, 47, 47, 0.6);
@@ -171,7 +172,7 @@
 
 .ts11 {
     font-size: 40px;
-    margin-right: 50px;
+    margin-right: 100px;
     font-family: 'Aboreto';
     margin-left: 100px;
 }
@@ -183,11 +184,11 @@
     justify-content: center;
     align-items: center;
     padding-top: 200px;
-    margin-left: 50px;
+    margin-left: 200px;
 }
 
 .fotoprueba1 {
-    height: 700px;
+    height: 600px;
 }
 
 .ts2 {
@@ -202,7 +203,7 @@
     flex-direction: column;
     align-items: flex-start;
     margin-left: 50px;
-    margin-right: 300px;
+    margin-right: 200px;
     background-color:  rgba(71, 47, 47, 0.1);
     padding: 50px;
     border-radius: 10px;
@@ -272,8 +273,6 @@
     justify-content: space-around;
     flex-wrap: nowrap;
     max-width: 100vh ;
-
-
 }
 
 .ts5 {
@@ -288,7 +287,7 @@
 }
 
 .foto7{
-    height: 600px;
+    height: 500px;
 }
 
 .images2 {
@@ -320,9 +319,11 @@
     /* Puedes ajustar la posición horizontal según tus necesidades */
 }
 
-.foto5,
-.foto6{
+.foto5{
     height: 500px;
+}
+.foto6{
+    height: 400px;
 }
 
 
@@ -342,7 +343,7 @@
     position: relative;
     top: -150px;
     /* Puedes ajustar la posición vertical según tus necesidades */
-    right: -750px;
+    right: -600px;
     /* Puedes ajustar la posición horizontal según tus necesidades */
 }
 
