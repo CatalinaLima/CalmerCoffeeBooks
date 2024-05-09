@@ -51,9 +51,9 @@ const Contact = () => {
       <h2 className="title">CONTACTANOS!</h2>
       
       <div className='formulario'>
-      <p>Queres realizar un festejo, reservar una mesa, o simplemente comunicarte con nosotros?
+        <p>Queres realizar un festejo, reservar una mesa, o simplemente comunicarte con nosotros?
         Dejanos tu consulta y nos comunicaremos contigo!
-      </p>
+        </p>
         <form className='form2'  onSubmit={handleSubmit}>
           <label htmlFor="name">Name:</label>
           <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} />

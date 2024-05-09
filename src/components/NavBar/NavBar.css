@@ -23,16 +23,17 @@
     font-weight: bolder;
     width: 10%;
   }
-  
-  
 
-  
+  .nav-link1{
+    color: rgb(43, 43, 43);
+  }
+
   .nav-link1:hover {
     color: rgb(19, 19, 17);
   }
   
   .nav-link1.active {
-    color: rgb(80, 18, 156);
+    color: rgb(156, 62, 18);
     font-weight: 600;
   }
   
